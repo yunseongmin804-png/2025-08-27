@@ -1,0 +1,19 @@
+p {
+    text-align: center;
+    color: blue;
+    font-style: italic;
+}
+
+h1 {
+    padding: 10px;
+    background-color: #fefefe;
+    color: #333;
+}
+
+.bg {
+    background-color: aqua !important;
+}
+
+.bg1 {
+    background-color: rgb(229, 219, 16);
+}
