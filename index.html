@@ -1,14 +1,48 @@
-<html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="/css/reset.css">
-<link rel="stylesheet" href="/css/style.css">
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>TUI Grid Example</title>
+  <!-- TUI Grid CSS -->
+  <link rel="stylesheet" href="https://uicdn.toast.com/grid/latest/tui-grid.css" />
+</head>
 <body>
-    <h1><i class="fas fa-home"></i> Solid 홈 아이콘</h1>
-    <h1><i class="far fa-envelope"></i> Regular 메일 아이콘</h1>
-    <h1><i class="fab fa-github"></i> GitHub 아이콘</h1>
-    <p id="container1" class="bg1 bg" style="color:red;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p id="container2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <h1>TUI Grid 연습</h1>
+  <!-- Grid가 들어갈 자리 -->
+  <div id="grid" style="margin:20px;"></div>
+  <!-- TUI Grid JS -->
+  <script src="https://uicdn.toast.com/grid/latest/tui-grid.js"></script>
+  <script>
+    // Grid 생성
+    const grid = new tui.Grid({
+      el: document.getElementById('grid'),
+      scrollX: false,
+      scrollY: false,
+      rowHeaders: ['rowNum'],  // 행 번호 표시
+      columns: [
+        { header: 'ID', name: 'id' },
+        { header: '이름', name: 'name' },
+        { header: '나이', name: 'age' }
+      ],
+      data: [
+        { id: 1, name: '홍길동', age: 25 },
+        { id: 2, name: '김철수', age: 30 },
+        { id: 3, name: '이영희', age: 28 }
+      ]
+    });
+  </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
