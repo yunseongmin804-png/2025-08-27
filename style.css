@@ -1,48 +1,23 @@
-/* reset.css 역할처럼 기본 초기화 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* style.css */
 
+/* 전체 기본 스타일 */
 body {
-  font-style: italic;
-  font-family: "공식"; /* 필요시 원하는 폰트로 변경 */
+  font-family: 'Do Hyeon', sans-serif; /* 구글 폰트 적용 */
+  background-color: #fff4f0; /* 부드러운 배경색 */
+  padding: 20px;
+  line-height: 1.6;
 }
 
-/* 공통 배경 색 클래스 */
-.bg {
-  background-color: aqua !important;
-}
-
-.bg1 {
-  background-color: rgb(229, 219, 16);
-}
-
-/* 컨테이너 스타일 */
-#container1 {
-  width: 500px;
-  margin: 10px auto;
-  padding: 10px;
-  border: 1px solid #e70c0c;
-}
-
-#container2 {
-  width: 500px;
-  margin: 10px auto;
-  padding: 10px;
-  border: 1px solid #0f46eb;
-}
-
-/* 텍스트 스타일 */
-p {
-  text-align: center;
-  color: rgb(227, 7, 7);
-  font-style: italic;
-}
-
+/* 제목 스타일 */
 h1 {
-  padding: 10px;
-  background-color: #fefefe;
+  color: #e63946; /* 레드향과 어울리는 붉은 색 */
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* 문단 스타일 */
+p {
+  font-size: 1.2em;
   color: #333;
+  margin-bottom: 10px;
 }
