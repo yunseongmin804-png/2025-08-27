@@ -1,0 +1,37 @@
+<html>
+<link rel="stylesheet" href="css/reset.css">
+<style>
+    .btn-save {
+        border: 1px solid #1F32C3;
+        background-color: #1F32C3;
+        border-radius: 6px;
+        height: 40px;
+        color: #FFFFFF;
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+    /* 버튼 비활성화 상태 */
+    .btn-save:disabled {
+        background-color: #aaa;
+        /* 회색 배경 */
+        border-color: #aaa;
+        /* 테두리도 회색 */
+        color: #eee;
+        /* 글씨 연한색 */
+        cursor: wait;
+        /* 마우스 커서 표시 */
+        opacity: 0.7;
+        /* 반투명 효과 */
+    }
+</style>
+<body style="padding:200px">
+    <div style="width:95%;
+    height: 50px;
+    border: 2px solid #1F32C3;
+    position: absolute;
+    bottom:10px;
+    ">
+        <button class="btn-save" disabled>Save</button>
+    </div>
+</body>
+</html>
