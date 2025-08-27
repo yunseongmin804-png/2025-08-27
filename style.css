@@ -37,7 +37,7 @@ body {
 /* 텍스트 스타일 */
 p {
   text-align: center;
-  color: blue;
+  color: rgb(227, 7, 7);
   font-style: italic;
 }
 
